@@ -1,0 +1,130 @@
+:root {font-size: 62.5%;}
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+body {
+      font-family: helvetica;
+      font-size: 1.75rem;
+			margin: 0 auto;
+}
+
+header a {
+
+	color: black;
+	padding: 1rem;
+}
+#kleinlogo{
+	width: 4rem;
+	height: 4.4rem;
+	margin-left: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+#grootlogo{
+	display: none;
+}
+
+header{
+	background-color: white;
+	margin-bottom: 1rem;
+	display: flex;
+}
+
+div {
+      height: 100vh;
+      position: relative;
+
+}
+
+h1{
+	color: white;
+	font-size: 3rem;
+	padding: 1rem;
+}
+
+#colorspacelogo{
+	width: 5rem;
+	height: 3rem;
+	margin-top: 1rem;
+	margin-left: 2rem;
+}
+
+p{
+	margin-top: 1rem;
+	padding: 1.4rem;
+}
+.gradienttools {
+      background-image: linear-gradient(180deg,  #fcd6e3 0%,#aaf0ed 100%);
+}
+
+.mycolorspace {
+	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.uigradients {
+      background-image: linear-gradient(-40deg,  #93a5cf 0%,#e4efe9 100%);
+}
+
+.gradientguru {
+      background-image: linear-gradient(45deg,  #b1ecb6 0%,#f1d4cc 50%,#fef2b6 100%);
+}
+
+.paneel5 {
+      background-image: linear-gradient(to right,  #fee7b5 0%,#fe93a0 50%,#fdb77b 100%);
+}
+
+div a {
+      position: absolute;
+      left: 43vw;
+      bottom: 3vh;
+      width: 18vw;
+			padding: .5rem;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+			background-color: red;
+			border: 1px black groove;
+      animation-name: blink;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+
+}
+
+@keyframes blink {
+      15%, 80% {
+            transform: translate(0,.7rem);
+      }
+      45%, 55% {
+            opacity: 1;
+      }
+      50% {
+            opacity: 0.2;
+      }
+}
+
+@media (min-width:600px) {
+
+	header{
+		display: flex;
+		flex-direction: row;
+
+	}
+
+	header a {
+		position: relative;
+		top:2rem;
+	}
+
+	#grootlogo{
+		display:block;
+		height: 10rem;
+		width: 19rem;
+	}
+
+	#kleinlogo{
+		display:none ;
+	}
+
+
+}
